@@ -1,4 +1,10 @@
 // Recuerda todas las propiedades que tiene el objeto event !
+const map = document.querySelector(".map");
+
+map.addEventListener("click", function(event){
+  drawCross(event.x, event.y);
+})
+
 
 function drawCross(x, y) {
   // Creamos un elemento div para la primera línea
